@@ -1,0 +1,105 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Body with full background image */
+body {
+  height: 100vh;
+  width: 100vw;
+  background: url('pngegg.png') no-repeat center center fixed;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Centered container with glassmorphism */
+.container {
+  background: #b0ebdf;
+  backdrop-filter: blur(8px);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+}
+
+/* Headings */
+h1, h2 {
+  color: #e6004c;
+  margin-bottom: 1rem;
+}
+
+/* Form elements */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+label {
+  text-align: left;
+  font-weight: bold;
+  color: #333;
+}
+
+input {
+  padding: 0.7rem;
+  border-radius: 10px;
+  border: 2px solid #ffb3c6;
+  outline: none;
+  font-size: 1rem;
+}
+
+input:focus {
+  border-color: #ff4d6d;
+}
+
+/* Button */
+button {
+  padding: 0.8rem;
+  background-color: #ff4d6d;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #e6004c;
+}
+
+/* Shortened URLs list */
+#shortened-urls {
+  list-style-type: none;
+  padding: 0;
+}
+
+#shortened-urls li {
+  background: rgba(255, 255, 255, 0.6);
+  margin: 0.5rem 0;
+  padding: 0.7rem;
+  border-radius: 10px;
+  border-left: 5px solid #ff4d6d;
+}
+
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  form {
+    padding: 1rem;
+  }
+
+  input, button {
+    font-size: 0.95rem;
+  }
+}
